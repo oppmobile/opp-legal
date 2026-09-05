@@ -29,18 +29,24 @@
      href="https://apps.apple.com/tr/app/id6753321011">App Store'dan indir</a>
 </div>
 <script>
-  var id = new URLSearchParams(location.search).get('id') || '';
-  var valid = /^[0-9a-fA-F-]{36}$/.test(id);
-  var deep = valid ? 'opp://perk/' + id : 'opp://';
-  document.getElementById('open').href = deep;
+  // Short code travels in the hash so the link stays tiny; older links used ?id=<uuid>.
+  var params = new URLSearchParams(location.search);
+  var code = (location.hash || '').replace(/^#/, '').trim();
+  var uuid = params.get('id');
 
-  if (!valid) {
+  var deep = code ? 'opp://perk/c/' + encodeURIComponent(code)
+           : uuid ? 'opp://perk/' + encodeURIComponent(uuid)
+           : null;
+
+  if (deep) {
+    document.getElementById('open').href = deep;
+    if (/iPhone|iPad|iPod/.test(navigator.userAgent)) {
+      setTimeout(function () { location.href = deep; }, 60);
+    }
+  } else {
     document.getElementById('head').textContent = 'Bağlantı geçersiz';
     document.getElementById('sub').textContent = 'Bu fırsat bağlantısı eksik veya hatalı görünüyor.';
-  } else if (/iPhone|iPad|iPod/.test(navigator.userAgent)) {
-    // Try the app straight away; if it is not installed nothing happens and the
-    // buttons above remain as the fallback.
-    setTimeout(function () { location.href = deep; }, 60);
+    document.getElementById('open').style.display = 'none';
   }
 </script>
 </body>
