@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fırsatı aç — OPP</title>
+<style>
+  :root{--bg:#FAF7F2;--card:#fff;--ink:#241C17;--muted:#6B625A;--brand:#C6413A;--line:#E7E0D6}
+  @media (prefers-color-scheme:dark){:root{--bg:#17130F;--card:#201A15;--ink:#F3EDE5;--muted:#A99E92;--line:#33291F}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+       display:flex;align-items:center;justify-content:center;min-height:100vh;padding:24px;text-align:center}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:32px 26px;max-width:420px;width:100%}
+  .logo{font-weight:800;font-size:30px;color:var(--brand);letter-spacing:.5px}
+  h1{font-size:19px;margin:16px 0 8px}
+  p{color:var(--muted);font-size:15px;margin:0 0 22px}
+  a.btn{display:block;padding:14px 18px;border-radius:13px;text-decoration:none;font-weight:600;margin-top:10px}
+  .primary{background:var(--brand);color:#fff}
+  .secondary{border:1px solid var(--line);color:var(--ink)}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="logo">opp</div>
+  <h1 id="head">Fırsat uygulamada açılıyor…</h1>
+  <p id="sub">Uygulama açılmadıysa aşağıdan devam edin.</p>
+  <a class="btn primary" id="open" href="#">Uygulamada aç</a>
+  <a class="btn secondary" id="store"
+     href="https://apps.apple.com/tr/app/id6753321011">App Store'dan indir</a>
+</div>
+<script>
+  var id = new URLSearchParams(location.search).get('id') || '';
+  var valid = /^[0-9a-fA-F-]{36}$/.test(id);
+  var deep = valid ? 'opp://perk/' + id : 'opp://';
+  document.getElementById('open').href = deep;
+
+  if (!valid) {
+    document.getElementById('head').textContent = 'Bağlantı geçersiz';
+    document.getElementById('sub').textContent = 'Bu fırsat bağlantısı eksik veya hatalı görünüyor.';
+  } else if (/iPhone|iPad|iPod/.test(navigator.userAgent)) {
+    // Try the app straight away; if it is not installed nothing happens and the
+    // buttons above remain as the fallback.
+    setTimeout(function () { location.href = deep; }, 60);
+  }
+</script>
+</body>
+</html>
