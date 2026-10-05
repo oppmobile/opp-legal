@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root{--bg:#F7F2E9;--card:#fff;--ink:#14110D;--muted:#5A5145;--brand:#8A5A12;--line:#E4DACA}
+  @media (prefers-color-scheme:dark){:root{--bg:#0B1026;--card:#161C3D;--ink:#F5F7FF;--muted:#B9C0DE;--brand:#F0B44C;--line:#252D57}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  .wrap{max-width:760px;margin:0 auto;padding:32px 20px 72px}
+  header{border-bottom:1px solid var(--line);padding-bottom:18px;margin-bottom:28px}
+  .logo{display:inline-block;font-weight:800;font-size:22px;color:var(--brand);letter-spacing:.3px;text-decoration:none}
+  h1{font-size:26px;margin:14px 0 6px}
+  h2{font-size:18px;margin:30px 0 8px}
+  .meta{color:var(--muted);font-size:14px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:16px 0}
+  .mail{font-size:19px;font-weight:700}
+  dl{margin:0} dt{font-weight:600;margin-top:16px} dd{margin:4px 0 0;color:var(--muted)}
+  ul{padding-left:20px} li{margin:5px 0}
+  a{color:var(--brand)}
+  .lang{margin-top:48px;padding-top:8px;border-top:1px solid var(--line)}
+  footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+</style>
+<title>Destek — Ezan Saatleri</title>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="logo" href="../">Ezan Saatleri</a>
+  <h1>Destek</h1>
+  <div class="meta">Sorularınız, hata bildirimleriniz ve önerileriniz için · <a href="#en">English</a></div>
+</header>
+
+<div class="card">
+  <div class="mail"><a href="mailto:oppdeveloper@gmail.com">oppdeveloper@gmail.com</a></div>
+  <div class="meta" style="margin-top:6px">Genellikle 1–2 iş günü içinde yanıt veriyoruz. Hata bildiriyorsanız telefon modelinizi, iOS sürümünüzü ve şehrinizi yazmanız işimizi kolaylaştırır.</div>
+</div>
+
+<h2>Sık sorulanlar</h2>
+<dl>
+  <dt>Vakitler camimin panosundakinden farklı.</dt>
+  <dd>Türkiye’de vakitler Diyanet’e göredir. Türkiye dışındaysanız Ayarlar → Cami → “Camimin vakitlerini gir” ile panodaki bugünkü vakitleri bir kez girin; sonraki günler buna göre ayarlanır.</dd>
+  <dt>Uyarı sesi çalmıyor.</dt>
+  <dd>Uyarılar sayfasının üstündeki kartta bildirim izninin açık olduğundan emin olun ve “Deneme sesi çal”a dokunun. Telefon sessizdeyse veya bir Odak modu açıksa bildirim sesleri duyulmaz. iOS 26 ve sonrasında İmsak alarmı sessiz modda da çalar.</dd>
+  <dt>Kıble yönü tutmuyor.</dt>
+  <dd>Telefonu düz tutun; metal eşyalardan, mıknatıslı kılıflardan ve hoparlörlerden uzaklaşın. Pusulayı ayarlamak için telefonla havada birkaç kez 8 çizin. Konum izni açıkken kıble, bulunduğunuz yere ve gerçek kuzeye göre hesaplanır.</dd>
+  <dt>Başka bir şehre gittim.</dt>
+  <dd>Uygulamayı açtığınızda, seçili yerden 40 km uzaktaysanız ana sayfada bulunduğunuz yerin vakitlerine geçmeyi öneren bir kart çıkar. İsterseniz Ayarlar → Cami’den de değiştirebilirsiniz.</dd>
+  <dt>Reklamları nasıl kaldırırım?</dt>
+  <dd>Ayarlar → Destek → “Reklamları kaldır” ile tek seferlik satın alabilirsiniz. Yeni bir telefonda “Satın alımları geri yükle”ye dokunun.</dd>
+  <dt>Hicri tarih ilan edilenden bir gün farklı.</dt>
+  <dd>Ayarlar → Hicri tarih’ten bir gün ileri veya geri alabilirsiniz; kandiller ve bayramlar da buna göre kayar.</dd>
+</dl>
+
+<p class="meta" style="margin-top:28px"><a href="../privacy/">Gizlilik Politikası</a></p>
+
+<section class="lang" id="en" lang="en">
+<h1>Support (English)</h1>
+<div class="card">
+  <div class="mail"><a href="mailto:oppdeveloper@gmail.com">oppdeveloper@gmail.com</a></div>
+  <div class="meta" style="margin-top:6px">We usually reply within 1–2 working days. For bug reports, please include your phone model, iOS version and city.</div>
+</div>
+<dl>
+  <dt>Times differ from my mosque's board.</dt>
+  <dd>Settings → Mosque → “Match my mosque's times”: enter today's times from the board once and the following days are adjusted.</dd>
+  <dt>I don't hear the alert sound.</dt>
+  <dd>Check that notifications are allowed (card at the top of Alerts) and tap “Play a test sound”. Notification sounds are silent when the phone is on silent or a Focus is on. From iOS 26 the Fajr alarm rings even in Silent mode.</dd>
+  <dt>The qibla looks wrong.</dt>
+  <dd>Hold the phone flat, away from metal, magnetic cases and speakers, and draw a figure 8 in the air a few times to calibrate. With location allowed, the qibla uses where you are and true north.</dd>
+  <dt>I travelled to another city.</dt>
+  <dd>When you open the app 40 km or more from your chosen place, a card offers that area's times. You can also change it under Settings → Mosque.</dd>
+  <dt>How do I remove ads?</dt>
+  <dd>Settings → Support → “Remove ads” (one-time purchase). On a new phone, tap “Restore purchases”.</dd>
+</dl>
+<p class="meta"><a href="../privacy/#en">Privacy Policy</a></p>
+</section>
+
+<footer>© 2026 Ezan Saatleri</footer>
+</div>
+</body>
+</html>
