@@ -43,11 +43,17 @@
   <li>Konumunuz bize gönderilmez ve hiçbir yerde saklanmaz. Uygulama konumu yalnızca açıkken kullanır.</li>
 </ul>
 
-<h2>2. Vakit verileri</h2>
-<p>Vakitler telefonda hesaplanır. Diyanet’in resmî vakitleri eklendiğinde, uygulama yalnızca seçtiğiniz ilçenin kodunu kullanarak vakit tablosunu sunucumuzdan indirir; kimliğiniz veya konumunuz gönderilmez.</p>
+<h2>2. Vakit verileri ve günlük içerik</h2>
+<p>Türkiye’de ve Diyanet’in vakit yayınladığı diğer yerlerde uygulama, Diyanet İşleri Başkanlığı’nın resmî vakitlerini sunucumuzdan indirir. Diyanet’in vakit yayınlamadığı yerlerde vakitler telefonda hesaplanır.</p>
+<ul>
+  <li>Seçtiğiniz yerin hangi Diyanet ilçesine düştüğü telefonda, Apple’ın verdiği yer adına göre bulunur. Sunucumuza yalnızca bu ilçenin kodu gider; kimliğiniz veya konumunuz gitmez.</li>
+  <li>Yurt dışında yer adı doğrudan eşleşmezse telefon, Diyanet listesindeki yakın şehirlerin adlarını Apple Haritalar’da arayarak en yakınını bulur. Bu aramada sizin konumunuz değil, yalnızca o şehirlerin adları gönderilir.</li>
+  <li>Günün ayeti, hadisi ve duası da sunucumuzdan indirilir; bunun için sizden hiçbir bilgi gönderilmez.</li>
+  <li>Sunucumuz Supabase altyapısında, Avrupa Birliği’nde (Frankfurt) çalışır. İndirme isteklerinde IP adresiniz barındırma sağlayıcısının güvenlik kayıtlarında kısa bir süre tutulabilir; bu kayıtları sizinle ilişkilendirmeyiz ve başka bir amaçla kullanmayız.</li>
+</ul>
 
 <h2>3. Telefonda kalan veriler</h2>
-<p>Seçtiğiniz cami ve şehir, mezhep, uyarı tercihleri, minare seçimi ve yazı boyutu yalnızca telefonunuzda (uygulamanın ve widget’ların ortak alanında) saklanır. Uygulamayı sildiğinizde bu veriler de silinir.</p>
+<p>Seçtiğiniz cami ve şehir, mezhep, uyarı tercihleri, minare seçimi, yazı boyutu ile indirilen vakit tabloları ve günlük içerik yalnızca telefonunuzda (uygulamanın ve widget’ların ortak alanında) saklanır. Uygulamayı sildiğinizde bu veriler de silinir.</p>
 
 <h2>4. Bildirimler ve alarm</h2>
 <p>Vakit uyarıları ve İmsak alarmı telefonunuzda planlanır; bunun için hiçbir sunucu kullanılmaz.</p>
@@ -79,8 +85,8 @@
 <p>Adhan Times (Ezan Saatleri) shows prayer times, the qibla and a daily verse and hadith.</p>
 <div class="card"><strong>In short:</strong> no account, no sign-in, no tracking. Your location and settings stay on your phone; we keep no data about you on our servers.</div>
 <p><strong>Location.</strong> If you allow it, location is used on your phone to calculate prayer times, show the qibla and distance to Makkah, list nearby mosques and suggest updating times when you travel. It is sent to Apple Maps to look up place names and nearby mosques. Outside Türkiye, when you choose a mosque, coordinates rounded to about 1 km are sent to the public islamic.app mosque directory. We never receive or store your location. Location is used only while the app is open.</p>
-<p><strong>Prayer-time data.</strong> Times are calculated on your phone. When official Diyanet times are added, the app downloads the timetable for your chosen district from our server using only the district code — no identity or location.</p>
-<p><strong>On your phone only:</strong> your chosen mosque and city, madhhab, alert choices, minaret style and text size. Deleting the app deletes them.</p>
+<p><strong>Prayer times and daily content.</strong> In Türkiye and wherever else Diyanet publishes times, the app downloads the Presidency of Religious Affairs’ official times from our server; elsewhere times are calculated on your phone. Which Diyanet district your place belongs to is worked out on your phone from the place name Apple gives it, and only that district code is sent to our server — no identity or location. Abroad, if the name doesn’t match directly, the phone looks up the names of nearby cities from Diyanet’s list in Apple Maps to find the closest; that sends only those city names, not your location. The daily verse, hadith and dua are also downloaded from our server, with nothing sent about you. Our server runs on Supabase in the European Union (Frankfurt). Your IP address may be kept briefly in the hosting provider’s security logs; we don’t link these logs to you or use them for anything else.</p>
+<p><strong>On your phone only:</strong> your chosen mosque and city, madhhab, alert choices, minaret style, text size, and the downloaded timetables and daily content. Deleting the app deletes them.</p>
 <p><strong>Notifications and alarm</strong> are scheduled on your phone. No server is involved.</p>
 <p><strong>Share images and Photos.</strong> Story images are made on your phone and go only to the app you choose to share with, under that app's policy. The app adds to Photos only when you tap Save Image and never reads your photos.</p>
 <p><strong>Ads.</strong> Non-personalised ads via Google AdMob: your advertising identifier (IDFA) is not used, no interest profile is built and you are not tracked across apps or sites. Google processes limited technical data (device type, OS version, approximate region, IP address) to serve ads and prevent fraud, under <a href="https://policies.google.com/privacy">Google's privacy policy</a>. Where the law requires it (e.g. the EU and UK) a consent form is shown first.</p>
