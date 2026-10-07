@@ -32,13 +32,14 @@
   <div class="meta">Son güncelleme: 6 Ekim 2026 · <a href="#en">English</a></div>
 </header>
 
-<p>Ezan Saatleri (“uygulama”) namaz vakitlerini, kıbleyi ve günün ayet ve hadisini gösteren bir mobil uygulamadır. Bu politika hangi verilerin nasıl işlendiğini açıklar.</p>
+<p>Ezan Saatleri (“uygulama”) namaz vakitlerini, kıbleyi ve günün ayet ve hadisini gösteren, iPhone ve Android için bir mobil uygulamadır. Bu politika hangi verilerin nasıl işlendiğini açıklar.</p>
 <div class="card"><strong>Özetle:</strong> Hesap yok, üyelik yok, takip yok. Konumunuz ve ayarlarınız telefonunuzda kalır; bizim sunucularımızda sizinle ilişkili hiçbir veri tutulmaz.</div>
 
 <h2>1. Konum</h2>
 <p>Konum iznini verirseniz uygulama konumunuzu yalnızca telefonda şu işler için kullanır: bulunduğunuz yerin namaz vakitlerini hesaplamak, kıble yönünü ve Mekke’ye uzaklığı göstermek, yakındaki camileri listelemek ve başka bir şehre gittiğinizde vakitleri oraya göre güncellemeyi önermek.</p>
 <ul>
-  <li>Yer adını bulmak ve yakındaki camileri aramak için konum Apple Haritalar’a gönderilir (Apple’ın gizlilik politikası geçerlidir).</li>
+  <li><strong>iPhone’da</strong> yer adını bulmak ve yakındaki camileri aramak için konum Apple Haritalar’a gönderilir (Apple’ın gizlilik politikası geçerlidir).</li>
+  <li><strong>Android’de</strong> yer adı ve şehir araması için telefonun Google yer adı hizmeti (Android Geocoder) kullanılır (Google’ın gizlilik politikası geçerlidir). Yakındaki camiler OpenStreetMap’in herkese açık Overpass hizmetinden, yaklaşık 1 km’ye yuvarlanmış koordinatlarla aranır.</li>
   <li>Türkiye dışında cami seçerken, yaklaşık 1 km’ye yuvarlanmış koordinatlar herkese açık cami dizini islamic.app’e gönderilir.</li>
   <li>Konumunuz bize gönderilmez ve hiçbir yerde saklanmaz. Uygulama konumu yalnızca açıkken kullanır.</li>
 </ul>
@@ -46,8 +47,8 @@
 <h2>2. Vakit verileri ve günlük içerik</h2>
 <p>Türkiye’de ve Diyanet’in vakit yayınladığı diğer yerlerde uygulama, Diyanet İşleri Başkanlığı’nın resmî vakitlerini sunucumuzdan indirir. Diyanet’in vakit yayınlamadığı yerlerde vakitler telefonda hesaplanır.</p>
 <ul>
-  <li>Seçtiğiniz yerin hangi Diyanet ilçesine düştüğü telefonda, Apple’ın verdiği yer adına göre bulunur. Sunucumuza yalnızca bu ilçenin kodu gider; kimliğiniz veya konumunuz gitmez.</li>
-  <li>Yurt dışında yer adı doğrudan eşleşmezse telefon, Diyanet listesindeki yakın şehirlerin adlarını Apple Haritalar’da arayarak en yakınını bulur. Bu aramada sizin konumunuz değil, yalnızca o şehirlerin adları gönderilir.</li>
+  <li>Seçtiğiniz yerin hangi Diyanet ilçesine düştüğü telefonda, telefonun harita hizmetinin (iPhone’da Apple, Android’de Google) verdiği yer adına göre bulunur. Sunucumuza yalnızca bu ilçenin kodu gider; kimliğiniz veya konumunuz gitmez.</li>
+  <li>Yurt dışında yer adı doğrudan eşleşmezse telefon, Diyanet listesindeki yakın şehirlerin adlarını aynı harita hizmetinde arayarak en yakınını bulur. Bu aramada sizin konumunuz değil, yalnızca o şehirlerin adları gönderilir.</li>
   <li>Günün ayeti, hadisi ve duası da sunucumuzdan indirilir; bunun için sizden hiçbir bilgi gönderilmez.</li>
   <li>Sunucumuz Supabase altyapısında, Avrupa Birliği’nde (Frankfurt) çalışır. İndirme isteklerinde IP adresiniz barındırma sağlayıcısının güvenlik kayıtlarında kısa bir süre tutulabilir; bu kayıtları sizinle ilişkilendirmeyiz ve başka bir amaçla kullanmayız.</li>
 </ul>
@@ -58,17 +59,17 @@
 <h2>4. Bildirimler ve alarm</h2>
 <p>Vakit uyarıları ve İmsak alarmı telefonunuzda planlanır; bunun için hiçbir sunucu kullanılmaz.</p>
 
-<h2>5. Paylaşım görselleri ve Fotoğraflar</h2>
-<p>Günün ayeti, hadisi ve Cuma mesajı için hazırlanan görseller telefonda oluşturulur. Paylaşmayı seçtiğinizde görsel, seçtiğiniz uygulamaya (ör. Instagram, WhatsApp) gönderilir ve o uygulamanın gizlilik politikasına tabidir. Fotoğraflar’a yalnızca “Görseli Kaydet” derseniz ekleme yapılır; fotoğraflarınız okunmaz.</p>
+<h2>5. Paylaşım görselleri ve fotoğraflar</h2>
+<p>Günün ayeti, hadisi ve Cuma mesajı için hazırlanan görseller telefonda oluşturulur. Paylaşmayı seçtiğinizde görsel, seçtiğiniz uygulamaya (ör. Instagram, WhatsApp) gönderilir ve o uygulamanın gizlilik politikasına tabidir. Fotoğraflar’a (Android’de galeriye) yalnızca “Görseli Kaydet” derseniz ekleme yapılır; fotoğraflarınız okunmaz.</p>
 
 <h2>6. Reklamlar</h2>
-<p>Uygulamada Google AdMob aracılığıyla <strong>kişiselleştirilmemiş</strong> reklamlar gösterilir: reklam kimliğiniz (IDFA) kullanılmaz, ilgi alanı profili oluşturulmaz ve başka uygulama veya sitelerde takip edilmezsiniz. Google, reklamı gösterebilmek ve sahtekârlığı önleyebilmek için sınırlı teknik bilgileri (ör. cihaz türü, işletim sistemi sürümü, yaklaşık bölge, IP adresi) işler; bu işleme <a href="https://policies.google.com/privacy">Google’ın gizlilik politikası</a> kapsamındadır. Yasanın gerektirdiği bölgelerde (ör. AB ve Birleşik Krallık) reklamlardan önce izin formu gösterilir.</p>
+<p>Uygulamada Google AdMob aracılığıyla <strong>kişiselleştirilmemiş</strong> reklamlar gösterilir: reklam kimliğiniz (iPhone’da IDFA, Android’de reklam kimliği) kullanılmaz, ilgi alanı profili oluşturulmaz ve başka uygulama veya sitelerde takip edilmezsiniz. Google, reklamı gösterebilmek ve sahtekârlığı önleyebilmek için sınırlı teknik bilgileri (ör. cihaz türü, işletim sistemi sürümü, yaklaşık bölge, IP adresi) işler; bu işleme <a href="https://policies.google.com/privacy">Google’ın gizlilik politikası</a> kapsamındadır. Yasanın gerektirdiği bölgelerde (ör. AB ve Birleşik Krallık) reklamlardan önce izin formu gösterilir.</p>
 
 <h2>7. Satın alma</h2>
-<p>“Reklamları kaldır” satın alımı Apple tarafından işlenir. Ödeme bilgilerinizi görmeyiz; uygulama yalnızca satın alımın yapılıp yapılmadığını öğrenir.</p>
+<p>“Reklamları kaldır” satın alımı iPhone’da Apple, Android’de Google Play tarafından işlenir. Ödeme bilgilerinizi görmeyiz; uygulama yalnızca satın alımın yapılıp yapılmadığını öğrenir.</p>
 
 <h2>8. Analiz ve hata raporları</h2>
-<p>Uygulamada analiz veya izleme aracı yoktur. Telefonunuzda izin verdiyseniz Apple, çökme raporlarını anonim olarak bizimle paylaşabilir.</p>
+<p>Uygulamada analiz veya izleme aracı yoktur. Telefonunuzda izin verdiyseniz Apple veya Google, çökme raporlarını anonim olarak bizimle paylaşabilir.</p>
 
 <h2>9. Çocuklar</h2>
 <p>Uygulama 13 yaşın altındaki çocuklara yönelik değildir ve bilerek bu yaş grubundan veri toplamaz.</p>
@@ -82,16 +83,16 @@
 <section class="lang" id="en" lang="en">
 <h1>Privacy Policy (English)</h1>
 <div class="meta">Last updated: 6 October 2026</div>
-<p>Adhan Times (Ezan Saatleri) shows prayer times, the qibla and a daily verse and hadith.</p>
+<p>Adhan Times (Ezan Saatleri) shows prayer times, the qibla and a daily verse and hadith, on iPhone and Android.</p>
 <div class="card"><strong>In short:</strong> no account, no sign-in, no tracking. Your location and settings stay on your phone; we keep no data about you on our servers.</div>
-<p><strong>Location.</strong> If you allow it, location is used on your phone to calculate prayer times, show the qibla and distance to Makkah, list nearby mosques and suggest updating times when you travel. It is sent to Apple Maps to look up place names and nearby mosques. Outside Türkiye, when you choose a mosque, coordinates rounded to about 1 km are sent to the public islamic.app mosque directory. We never receive or store your location. Location is used only while the app is open.</p>
-<p><strong>Prayer times and daily content.</strong> In Türkiye and wherever else Diyanet publishes times, the app downloads the Presidency of Religious Affairs’ official times from our server; elsewhere times are calculated on your phone. Which Diyanet district your place belongs to is worked out on your phone from the place name Apple gives it, and only that district code is sent to our server — no identity or location. Abroad, if the name doesn’t match directly, the phone looks up the names of nearby cities from Diyanet’s list in Apple Maps to find the closest; that sends only those city names, not your location. The daily verse, hadith and dua are also downloaded from our server, with nothing sent about you. Our server runs on Supabase in the European Union (Frankfurt). Your IP address may be kept briefly in the hosting provider’s security logs; we don’t link these logs to you or use them for anything else.</p>
+<p><strong>Location.</strong> If you allow it, location is used on your phone to calculate prayer times, show the qibla and distance to Makkah, list nearby mosques and suggest updating times when you travel. On iPhone it is sent to Apple Maps to look up place names and nearby mosques. On Android, place names and city search use the phone’s Google geocoding service, and nearby mosques come from OpenStreetMap’s public Overpass service, sent coordinates rounded to about 1 km. Outside Türkiye, when you choose a mosque, coordinates rounded to about 1 km are sent to the public islamic.app mosque directory. We never receive or store your location. Location is used only while the app is open.</p>
+<p><strong>Prayer times and daily content.</strong> In Türkiye and wherever else Diyanet publishes times, the app downloads the Presidency of Religious Affairs’ official times from our server; elsewhere times are calculated on your phone. Which Diyanet district your place belongs to is worked out on your phone from the place name its map service gives it (Apple on iPhone, Google on Android), and only that district code is sent to our server — no identity or location. Abroad, if the name doesn’t match directly, the phone looks up the names of nearby cities from Diyanet’s list in the same map service to find the closest; that sends only those city names, not your location. The daily verse, hadith and dua are also downloaded from our server, with nothing sent about you. Our server runs on Supabase in the European Union (Frankfurt). Your IP address may be kept briefly in the hosting provider’s security logs; we don’t link these logs to you or use them for anything else.</p>
 <p><strong>On your phone only:</strong> your chosen mosque and city, madhhab, alert choices, minaret style, text size, and the downloaded timetables and daily content. Deleting the app deletes them.</p>
 <p><strong>Notifications and alarm</strong> are scheduled on your phone. No server is involved.</p>
-<p><strong>Share images and Photos.</strong> Story images are made on your phone and go only to the app you choose to share with, under that app's policy. The app adds to Photos only when you tap Save Image and never reads your photos.</p>
-<p><strong>Ads.</strong> Non-personalised ads via Google AdMob: your advertising identifier (IDFA) is not used, no interest profile is built and you are not tracked across apps or sites. Google processes limited technical data (device type, OS version, approximate region, IP address) to serve ads and prevent fraud, under <a href="https://policies.google.com/privacy">Google's privacy policy</a>. Where the law requires it (e.g. the EU and UK) a consent form is shown first.</p>
-<p><strong>Purchases</strong> are processed by Apple; we never see payment details.</p>
-<p><strong>Analytics:</strong> none. If you allow it on your phone, Apple may share anonymous crash reports with us.</p>
+<p><strong>Share images and Photos.</strong> Story images are made on your phone and go only to the app you choose to share with, under that app's policy. The app adds to Photos (the gallery on Android) only when you tap Save Image and never reads your photos.</p>
+<p><strong>Ads.</strong> Non-personalised ads via Google AdMob: your advertising identifier (IDFA on iPhone, the advertising ID on Android) is not used, no interest profile is built and you are not tracked across apps or sites. Google processes limited technical data (device type, OS version, approximate region, IP address) to serve ads and prevent fraud, under <a href="https://policies.google.com/privacy">Google's privacy policy</a>. Where the law requires it (e.g. the EU and UK) a consent form is shown first.</p>
+<p><strong>Purchases</strong> are processed by Apple on iPhone and Google Play on Android; we never see payment details.</p>
+<p><strong>Analytics:</strong> none. If you allow it on your phone, Apple or Google may share anonymous crash reports with us.</p>
 <p><strong>Children.</strong> The app is not directed at children under 13.</p>
 <p><strong>Your rights.</strong> For requests under KVKK or GDPR, write to us. Because we hold no data about you, deleting the app removes everything.</p>
 <p><strong>Contact:</strong> <a href="mailto:oppdeveloper@gmail.com">oppdeveloper@gmail.com</a></p>
